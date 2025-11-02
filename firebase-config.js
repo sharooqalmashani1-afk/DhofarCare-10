@@ -1,0 +1,1 @@
+async function saveToFirebase(d){console.log(d);}
