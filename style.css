@@ -1,0 +1,61 @@
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Segoe UI','Cairo',sans-serif;background:#e9edff;color:#0f172a;line-height:1.5}
+.topbar{background:#fff;padding:.5rem 6%;display:flex;justify-content:space-between;gap:.5rem;font-size:.78rem;border-bottom:1px solid rgba(15,23,42,.02)}
+.top-left span{margin-right:.6rem}
+.btn{background:#5b21b6;color:#fff;border:none;border-radius:999px;padding:.5rem 1rem;font-weight:600;cursor:pointer;text-decoration:none;display:inline-block}
+.btn.small{padding:.32rem .7rem;font-size:.7rem}
+.navbar{background:#fff;display:flex;justify-content:space-between;align-items:center;padding:.6rem 6%;position:sticky;top:37px;z-index:40;box-shadow:0 10px 30px rgba(15,23,42,.02)}
+.brand{display:flex;align-items:center;gap:.6rem}
+.logo{width:55px;height:55px;object-fit:contain}
+.brand-text h1{font-size:1.2rem;color:#0f172a}
+.brand-text p{font-size:.7rem;color:#6b7280}
+.nav a{margin-left:1rem;text-decoration:none;color:#0f172a;font-weight:500}
+.nav a:hover{color:#5b21b6}
+.nav-btn{margin-left:1.5rem;background:#5b21b6;color:#fff}
+.hero{position:relative;background:linear-gradient(120deg,rgba(11,96,163,0.95) 0%,#0561a9 40%,#e9edff 40%),url('assets/home-services.jpg') center/cover no-repeat;height:350px;display:flex;align-items:center}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(90deg,rgba(5,96,160,.9) 0%,rgba(5,96,160,.1) 60%)}
+.hero-inner{position:relative;z-index:2;display:flex;justify-content:space-between;gap:2rem;width:100%;padding:1.8rem 6%}
+.hero-text{max-width:540px;color:#fff}
+.hero-text h2{font-size:2.1rem;margin-bottom:.6rem}
+.hero-text p{margin-bottom:.7rem}
+.hero-actions{display:flex;gap:.5rem;margin-bottom:.7rem}
+.btn.outline{background:transparent;border:1px solid rgba(255,255,255,.6)}
+.hero-tags{display:flex;gap:.4rem;flex-wrap:wrap}
+.hero-tags span{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);padding:.25rem .6rem;border-radius:999px;font-size:.68rem}
+.hero-card img{width:210px;border-radius:1.1rem;box-shadow:0 20px 45px rgba(15,23,42,.15);background:#fff}
+.section{padding:2.3rem 6%}
+.section h3{font-size:1.4rem;margin-bottom:.4rem}
+.section-sub{max-width:880px;color:#4b5563;margin-bottom:1rem}
+.three-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:1rem}
+.card{background:#fff;border-radius:1rem;padding:1rem 1.1rem;box-shadow:0 12px 26px rgba(15,23,42,.03);border:1px solid rgba(15,23,42,.02)}
+.services{background:#f4f6ff}
+.services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1rem;margin-top:1.1rem}
+.service-card{background:#fff;border-radius:1rem;padding:.7rem .8rem;font-weight:600;border:1px solid rgba(15,23,42,.02);box-shadow:0 12px 30px rgba(15,23,42,.02)}
+.muted-price{margin-top:1rem;color:#6b7280;font-size:.78rem}
+.tech-grid,.bmc,.media-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
+.tech-card,.bmc>div,.media-card{background:#fff;border-radius:1rem;padding:1rem;border:1px solid rgba(15,23,42,.02);box-shadow:0 12px 30px rgba(15,23,42,.02)}
+.media-card img{width:100%;border-radius:.8rem;margin-bottom:.4rem}
+.booking .form{background:#fff;border-radius:1.2rem;padding:1.1rem 1.3rem;max-width:520px;display:flex;flex-direction:column;gap:.4rem;box-shadow:0 12px 30px rgba(15,23,42,.03)}
+.booking label{font-weight:500}
+.booking input,.booking select,.booking textarea{background:#f4f6ff;border:1px solid rgba(15,23,42,.04);border-radius:.6rem;padding:.45rem .6rem}
+.booking input:focus,.booking select:focus,.booking textarea:focus{outline:1px solid rgba(91,33,182,.4)}
+.footer{text-align:center;padding:1.5rem 0 3rem;color:#94a3b8;font-size:.75rem}
+.modal{position:fixed;inset:0;background:rgba(15,23,42,.45);display:flex;align-items:center;justify-content:center;z-index:90}
+.modal-body{background:#fff;border-radius:1rem;padding:1rem 1.1rem 1.3rem;text-align:center;max-width:340px}
+.hidden{display:none}
+.chatbot{position:fixed;bottom:85px;right:20px;width:280px;background:#fff;border-radius:1rem;box-shadow:0 18px 40px rgba(15,23,42,.25);overflow:hidden;border:1px solid rgba(91,33,182,.09);display:none;flex-direction:column;z-index:120}
+.chat-header{background:#0f6fbf;color:#fff;padding:.4rem .6rem;display:flex;justify-content:space-between;align-items:center;font-weight:600;cursor:pointer}
+.chat-body{max-height:240px;overflow-y:auto;padding:.45rem;display:flex;flex-direction:column;gap:.35rem}
+.msg{padding:.35rem .5rem;border-radius:.5rem;font-size:.72rem;max-width:90%}
+.msg.bot{background:rgba(15,111,191,.12)}
+.msg.user{background:#dbeafe;align-self:flex-end}
+.chat-input{display:flex;gap:.3rem;padding:.4rem}
+.chat-input input{flex:1;border:1px solid rgba(15,23,42,.03);border-radius:.4rem;padding:.25rem .4rem}
+.chat-input button{background:#0f6fbf;border:none;color:#fff;border-radius:.4rem;padding:.3rem .5rem;cursor:pointer}
+.chat-toggle{position:fixed;bottom:25px;right:22px;width:46px;height:46px;border-radius:999px;background:#0f6fbf;color:#fff;border:none;box-shadow:0 18px 40px rgba(15,23,42,.25);cursor:pointer;z-index:119;font-size:1.1rem}
+@media(max-width:960px){
+  .hero{height:auto}
+  .hero-inner{flex-direction:column}
+  .navbar{flex-wrap:wrap}
+  .nav a{margin-left:.4rem}
+}
